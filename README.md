@@ -1,4 +1,4 @@
-# Jasper N. | Portfolio Website
+# Jasper N | Portfolio Website
 
 A full stack personal portfolio website built from scratch.
 
@@ -34,4 +34,4 @@ A full stack personal portfolio website built from scratch.
 
 ## Author
 
-Jasper N. - [GitHub](https://github.com/njasper-git)
+Jasper N - [GitHub](https://github.com/njasper-git)
