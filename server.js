@@ -2,6 +2,8 @@ const express = require("express");
 const fs = require("fs");
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.json());
 app.use(express.static("public"));
 
@@ -24,6 +26,8 @@ app.post("/api/contact", (req, res) => {
     return res.status(400).json({ error: "All fields are required." });
   }
 
+  console.log("New contact message:", { name, email, message });
+
   let messages = [];
   if (fs.existsSync("messages.json")) {
     messages = JSON.parse(fs.readFileSync("messages.json", "utf8"));
@@ -35,6 +39,6 @@ app.post("/api/contact", (req, res) => {
   res.json({ success: true });
 });
 
-app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
