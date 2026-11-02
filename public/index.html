@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasper N. | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Jasper N.</h1>
+    <p>Aspiring Full Stack Web Developer</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Jasper N., a final-year diploma student in Electronics and
+        Communication Engineering (ECE) at Shankara Polytechnic College,
+        Coimbatore.
+      </p>
+      <p>
+        I'm fascinated by web development because I love building things on my
+        own and seeing them come to life in the browser. I'm comfortable with
+        front-end development using HTML, CSS, JavaScript and React, and I've
+        also learned Python. Right now I'm learning back-end development with
+        Node.js and Express.
+      </p>
+      <p>I speak Tamil and English.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>Node.js</li>
+        <li>Express</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="projects-container">
+        <p>Loading projects...</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p class="contact-links">
+        GitHub:
+        <a href="https://github.com/njasper-git" target="_blank" rel="noopener">github.com/njasper-git</a>
+        <br>
+        Email:
+        <a href="mailto:n.jasper2006@gmail.com">n.jasper2006@gmail.com</a>
+      </p>
+
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jasper N. Built with HTML, CSS, JavaScript, Node.js and Express.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
